@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull flask-app:latest
 
 # Run the Docker image as a container
-echo
+docker run --name appdemo -d -p 5000:5000 flask-app:latest 
